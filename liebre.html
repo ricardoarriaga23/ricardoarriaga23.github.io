@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Liebre de Tehuantepec | Endémico</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <style>
+
+    body{
+      font-family:'Nunito',sans-serif;
+      background:#dac4b5;
+      color:#fff5e9;
+    }
+
+
+    .navbar{
+      box-shadow:0 2px 10px rgba(0,0,0,.1);
+    }
+
+    .hero{
+      background:#ac7b58;
+      border-radius:30px;
+      padding:60px 40px;
+      margin-top:40px;
+    }
+    .info-card{
+      background:#7d583e;
+      border-radius:25px;
+      padding:25px;
+      margin-bottom:20px;
+      box-shadow:0 4px 10px rgba(0,0,0,.05);
+    }
+
+    .info-card h3{
+      font-weight:800;
+      margin-bottom:15px;
+      color:#ffe7c8;
+    }
+
+    .illustration-box{
+
+      height:500px;
+
+      border:4px dashed #f6d1a8;
+
+      border-radius:30px;
+
+      background:white;
+
+      display:flex;
+      align-items:center;
+      justify-content:center;
+
+      text-align:center;
+
+      padding:20px;
+
+      overflow:hidden;
+
+    }
+
+    .illustration-box img{
+
+      width:100%;
+
+      max-width:350px;
+
+      height:auto;
+
+      object-fit:contain;
+
+      display:block;
+
+      margin:auto;
+
+    }
+
+    @media(max-width:768px){
+
+      .hero{
+        padding:35px 25px;
+        text-align:center;
+      }
+
+      .illustration-box{
+        height:350px;
+        margin-top:30px;
+      }
+
+      h1{
+        font-size:2.5rem;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+
+    <a class="navbar-brand" href="index.html">
+      Menú principal de Endémico
+    </a>
+
+    <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuNav">
+
+      <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+    <div class="collapse navbar-collapse" id="menuNav">
+
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+
+          <a class="nav-link active" href="index.html">
+            ⬅ Regresar a página principal
+          </a>
+
+        </li>
+
+      </ul>
+
+    </div>
+
+  </nav>
+
+  <div class="container hero">
+
+    <div class="row align-items-center">
+
+      <div class="col-lg-6">
+
+        <h1 class="fw-bold display-4">
+          Liebre de Tehuantepec
+        </h1>
+
+        <p>
+
+          La liebre de Tehuantepec es una especie endémica de México
+          que vive en los pastizales y zonas costeras del estado de Oaxaca.
+
+          Es conocida por sus largas orejas
+          y gran velocidad.
+
+        </p>
+
+        <div class="info-card">
+
+          <h3>
+            Información de la especie
+          </h3>
+
+          <ul>
+
+            <li>
+              <strong>Nombre científico:</strong>
+              Lepus flavigularis
+            </li>
+
+            <li>
+              <strong>Hábitat:</strong>
+              Pastizales y zonas costeras del Istmo de Tehuantepec, Oaxaca
+            </li>
+
+            <li>
+              <strong>Estado de conservación:</strong>
+              En peligro de extinción
+            </li>
+
+            <li>
+              <strong>Amenazas ambientales:</strong>
+              Caza, pérdida de hábitat y expansión agrícola
+            </li>
+
+            <li>
+              <strong>Importancia ecológica:</strong>
+              Contribuye al equilibrio de los ecosistemas y dispersión de semillas
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="info-card">
+
+          <h3>
+            Problemática ambiental
+          </h3>
+
+          <p>
+
+            La liebre de Tehuantepec enfrenta amenazas como:
+
+          </p>
+
+          <ul>
+
+            <li>Pérdida de hábitat</li>
+            <li>Expansión agrícola</li>
+            <li>Caza ilegal</li>
+            <li>Fragmentación del ecosistema</li>
+
+          </ul>
+
+        </div>
+
+        <div class="info-card">
+
+          <h3>
+            Conservación
+          </h3>
+
+          <p>
+
+            Existen programas de protección de ecosistemas,
+            monitoreo de poblaciones
+            y campañas de concientización
+            para evitar la caza y preservar su entorno natural.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-6 mt-4 mt-lg-0">
+
+        <div class="illustration-box">
+          <img src="img/te.png"
+               alt="Liebre de Tehuantepec">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

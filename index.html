@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Endémico | 5 especies endémicas de México</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: #f8f7f2;
+      color: #174c33;
+    }
+
+    .navbar {
+      background: #ffffff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .navbar-brand {
+      font-weight: 900;
+      font-size: 2rem;
+      color: #14532d;
+    }
+
+    .nav-link {
+      color: #14532d;
+      font-weight: 700;
+      margin-left: 10px;
+    }
+
+   
+
+    .hero {
+      background: linear-gradient(180deg,#e9f7ec,#d7f2df);
+      border-radius: 30px;
+      padding: 60px 30px;
+      margin-top: 30px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 900;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .hero-img {
+      width: 100%;
+      max-width: 420px;
+    }
+
+
+
+    .btn-custom {
+      background: #2f9e44;
+      color: white;
+      border-radius: 50px;
+      padding: 12px 25px;
+      font-weight: bold;
+      border: none;
+      transition: .3s;
+    }
+
+    .btn-custom:hover {
+      background: #237536;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    .btn-warning{
+      transition: .3s;
+    }
+
+    .btn-warning:hover{
+      transform: scale(1.05);
+    }
+
+  
+
+    .section-title {
+      text-align: center;
+      font-weight: 900;
+      margin: 80px 0 40px;
+      color: #14532d;
+    }
+
+    .species-card {
+      background: white;
+      border-radius: 25px;
+      padding: 20px;
+      text-align: center;
+      transition: 0.3s;
+      height: 100%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .species-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .species-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: contain;
+    }
+
+    .species-card h4 {
+      font-weight: 800;
+      margin-top: 15px;
+    }
+
+    .ecosystem-box,
+    .game-box {
+      background: white;
+      border-radius: 25px;
+      padding: 30px;
+      height: 100%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .ecosystem-box i,
+    .game-box i {
+      display: block;
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #2f9e44;
+    }
+
+
+    .game-section {
+      background: #fff6dc;
+      border-radius: 30px;
+      padding: 50px 30px;
+      margin-top: 80px;
+    }
+
+    footer {
+      background: #14532d;
+      color: white;
+      padding: 50px 0;
+      margin-top: 80px;
+    }
+
+    footer h3 {
+      font-weight: 900;
+    }
+
+    .social-icons i {
+      font-size: 1.5rem;
+      margin-right: 15px;
+    }
+
+    @media (max-width: 768px) {
+
+      .hero {
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero-img {
+        margin-top: 30px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg sticky-top">
+
+    <div class="container">
+
+      <a class="navbar-brand" href="#">
+        Endémico
+      </a>
+
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#menu">
+
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#especies">Especies</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#ecosistemas">Ecosistemas</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#conservacion">Conservación</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#juego">Juego</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#acerca">Acerca de</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <section class="container hero" id="inicio">
+
+    <div class="row align-items-center">
+
+      <div class="col-lg-6">
+
+        <h1>
+          Conoce y protege las especies únicas de México
+        </h1>
+
+        <p>
+          Aprende sobre animales increíbles que solo viven en México.
+          Un sitio educativo e interactivo para niños.
+        </p>
+
+        <button class="btn btn-custom mt-3">
+          Explorar especies
+        </button>
+
+      </div>
+
+      <div class="col-lg-6 text-center">
+
+        <img src="img/jolote.png"
+             class="hero-img"
+             alt="Ajolote">
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="container" id="especies">
+
+    <h2 class="section-title">
+      Las 5 especies endémicas
+    </h2>
+
+    <div class="row g-4 justify-content-center">
+
+
+      <div class="col-md-6 col-lg-4 col-xl-2">
+
+        <div class="species-card">
+
+          <img src="img/jolote.png" alt="Ajolote">
+
+          <h4>Ajolote</h4>
+
+          <a href="ajolote.html"
+             class="btn btn-custom btn-sm mt-2">
+
+            Ver más
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-xl-2">
+
+        <div class="species-card">
+
+          <img src="img/pajaro.png" alt="Chara enana">
+
+          <h4>Chara enana</h4>
+
+          <a href="enana.html"
+             class="btn btn-custom btn-sm mt-2">
+
+            Ver más
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-xl-2">
+
+        <div class="species-card">
+
+          <img src="img/liebre.png" alt="Liebre">
+
+          <h4>Liebre de Tehuantepec</h4>
+
+          <a href="liebre.html"
+             class="btn btn-custom btn-sm mt-2">
+
+            Ver más
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-xl-2">
+
+        <div class="species-card">
+
+          <img src="img/ringo.png" alt="Teporingo">
+
+          <h4>Teporingo</h4>
+
+          <a href="teporingo.html"
+             class="btn btn-custom btn-sm mt-2">
+
+            Ver más
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-md-6 col-lg-4 col-xl-2">
+
+        <div class="species-card">
+
+          <img src="img/tamaulipas.png" alt="Mochuelo">
+
+          <h4>Mochuelo tamaulipeco</h4>
+
+          <a href="mochuelo.html"
+             class="btn btn-custom btn-sm mt-2">
+
+            Ver más
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="container" id="ecosistemas">
+
+    <h2 class="section-title">
+      Explora los ecosistemas
+    </h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-6">
+
+        <div class="ecosystem-box">
+
+          <i class="fa-solid fa-tree"></i>
+
+          <h3>Bosques</h3>
+
+          <p>
+            Descubre los bosques donde viven muchas especies mexicanas.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="ecosystem-box">
+
+          <i class="fa-solid fa-water"></i>
+
+          <h3>Ecosistemas acuáticos</h3>
+
+          <p>
+            Conoce lagos, ríos y mares llenos de biodiversidad.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="container" id="conservacion">
+
+    <h2 class="section-title">
+      ¿Por qué debemos cuidarlos?
+    </h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+
+        <div class="ecosystem-box">
+
+          <i class="fa-solid fa-leaf"></i>
+
+          <h4>Conservación</h4>
+
+          <p>
+            Las especies ayudan a mantener el equilibrio de la naturaleza.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-4">
+
+        <div class="ecosystem-box">
+
+          <i class="fa-solid fa-triangle-exclamation"></i>
+
+          <h4>Amenazas</h4>
+
+          <p>
+            La contaminación y la pérdida de hábitat ponen en riesgo a los animales.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-4">
+
+        <div class="ecosystem-box">
+
+          <i class="fa-solid fa-heart"></i>
+
+          <h4>¿Qué podemos hacer?</h4>
+
+          <p>
+            Reciclar, ahorrar agua y cuidar los ecosistemas.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- JUEGO -->
+
+  <section class="container game-section" id="juego">
+
+    <div class="row align-items-center">
+
+      <div class="col-lg-6">
+
+        <h2 class="fw-bold">
+          ¡Juega y aprende!
+        </h2>
+
+        <p>
+          Aquí puedes agregar un juego interactivo para niños.
+          Por ejemplo: memorama, trivias o retos sobre especies mexicanas.
+        </p>
+
+        <a href="juego.html"
+           class="btn btn-warning rounded-pill px-4 py-2 fw-bold">
+
+          Jugar ahora
+
+        </a>
+
+      </div>
+
+      <div class="col-lg-6 text-center mt-4 mt-lg-0">
+
+        <a href="juego.html">
+
+          <img src="img/juego.png"
+               width="250"
+               alt="Juego">
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="container" id="acerca">
+
+    <h2 class="section-title">
+      Acerca de Endémico
+    </h2>
+
+    <div class="row justify-content-center">
+
+      <div class="col-lg-8">
+
+        <div class="ecosystem-box">
+
+          <p>
+            Endémico es un sitio educativo pensado para niños.
+            Su objetivo es enseñar sobre las especies endémicas de México
+            mediante ilustraciones, juegos y contenido interactivo.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+
+    <div class="container">
+
+      <div class="row align-items-center">
+
+        <div class="col-md-6">
+
+          <h3>Endémico</h3>
+
+          <p>
+            Conoce y protege la biodiversidad mexicana.
+          </p>
+
+        </div>
+
+        <div class="col-md-6 d-flex justify-content-center justify-content-md-end social-icons mt-3 mt-md-0">
+
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-youtube"></i>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
